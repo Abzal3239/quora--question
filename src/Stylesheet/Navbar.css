@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+  }
+ 
+.Header_Center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search{
+    background: lightgrey;
+    border-radius: 5px;
+    width: 23%;
+    margin-right: 8px;
+}
+.Search svg{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 15px;
+    color: grey;
+}
+.Search input{
+    
+    border-radius: 8px;
+    background: lightgrey;
+    color:#333;
+    border: none;
+    outline: none;
+    text-align: left;
+    margin-left: 22px;  padding: 13px 10px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    border-radius: 8px;
+    color: white;
+    background-color: red;
+    border: none;
+   
+    padding: 13px 10px;
+    cursor: pointer;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+}
+
+.Box{
+    
+    display: flex;
+    background-color: lightgray;
+     
+    margin-bottom: 40px;
+    border-radius: 5px;
+    margin: 2% 15%;
+ 
+    
+    
+}
+.LeftSide{
+    padding: 20px;
+    width: 60%;
+     
+    
+}
+
+h1{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+h3{
+    text-align: left;
+    font-size: 16px;
+}
+.Lists{
+    background-color: #fff;
+    padding: 20px;
+    margin:20px;
+    text-align: left;
+    border-radius: 5px;
+    
+}
+.Lists p{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.RightSide{
+    padding: 20px 0;;
+    width: 40%;
+}
+.RightSide .Lists{
+    background-color: #fff;
+    padding: 20px;
+    margin:20px 40px 0 0 ;
+    text-align: left;
+}
+
+.QuestionList{
+    text-align: left;
+    margin-bottom: 15px;
+ cursor: pointer;
+}
+
+.AddQuestion{
+    padding: 20px;
+    margin: 20px;
+   
+}
+
+.AddQuestion .Header{
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    text-align: left;
+    border-radius: 5px;
+
+    align-items: center;
+}
+.AddQuestion .Header input{
+    width: 75%;
+    text-align: left;
+    border: none;
+    padding: 0 10px;
+    outline: none;
+    margin-top: -15px;
+}
+.AddQuestion .Buttons2{
+    display: flex;
+    margin: 20px 0;
+    justify-content: end;
+}
+
+.QuestionBox3 {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+   
+    height: 400px;
+    margin: 2% 15%;
+border-radius: 5px;
+
+}
+
+svg{
+    color: grey;
+    font-size: 20px;
+}
+
+.QuestionList , h3{
+    text-transform: capitalize;
+}
