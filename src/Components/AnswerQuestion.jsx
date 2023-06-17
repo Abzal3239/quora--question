@@ -13,7 +13,13 @@ const AnswerQuestion = () => {
 
     const handleAnswer = () => {
         //todo add answer
-
+        if(question === "" || question === undefined )
+        {
+            alert("Please add question first");
+            console.log("no question")
+        }
+        else
+        {
         const user = JSON.parse(localStorage.getItem('user'));
         const questionLists = JSON.parse(localStorage.getItem('questionlist'));
 
@@ -29,6 +35,8 @@ const AnswerQuestion = () => {
         localStorage.setItem('questionlist', JSON.stringify(questionLists));
         navigate('/');
     };
+    };
+console.log(question);
     return (
         <>
             <NavBar />
@@ -74,7 +82,6 @@ const AnswerQuestion = () => {
                     <button className="Cancel">
                         <Link to="/">Cancel</Link>
                     </button>
-
                     <button
                         className="Add_Answer"
                         onClick={() => handleAnswer()}>

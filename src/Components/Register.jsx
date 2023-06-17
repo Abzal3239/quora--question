@@ -27,6 +27,11 @@ const Register = () => {
             password: password,
         };
 
+        if (email ==="" || password ==="") {
+            alert(" Please enter details.");
+            return false;
+        }
+
         if (!validateEmail(email)) {
             alert('Invalid email');
             return;

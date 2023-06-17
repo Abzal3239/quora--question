@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 
-const NavBar = ({ searchQuery, handleSearchQueryChange }) => {
+const NavBar = ({ searchQuery, handleSearchQueryChange,setQuestionList}) => {
+    
     const checkLogin = JSON.parse(localStorage.getItem('isLogin'));
     const navigate = useNavigate();
     const handleLogout = () => {
         localStorage.clear();
         navigate('/');
         window.location.reload();
+        
     };
 
     return (

@@ -34,6 +34,7 @@ const Home = () => {
             <NavBar
                 searchQuery={searchQuery}
                 handleSearchQueryChange={handleSearchQueryChange}
+                setQuestionList ={setQuestionList}
             />
             <div className="Box">
                 <LeftSide filteredQuestions={filteredQuestions} />
